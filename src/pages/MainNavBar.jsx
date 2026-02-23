@@ -50,7 +50,7 @@ const MainNavBar = () => {
                 </Link>
               </li>
               <li className="dropdown-item">
-                <Link to="/customer-login" className="dropdown-link">
+                <Link to="/Customer-login" className="dropdown-link">
                   Customer Login
                 </Link>
               </li>
@@ -66,7 +66,7 @@ const MainNavBar = () => {
         <Route path="/registration" element={<Registration />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/manager-login" element={<ManagerLogin />} />
-        <Route path="/customer-login" element={<CustomerLogin />} />
+        <Route path="/Customer-login" element={<CustomerLogin />} />
       </Routes>
 
 
