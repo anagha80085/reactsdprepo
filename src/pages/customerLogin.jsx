@@ -28,13 +28,16 @@ const CustomerLogin = () => {
     
     if (customer) 
     {
+      // Mark customer as logged in and store the customer object for later use
       sessionStorage.setItem('isCustomer', 'true');
+      sessionStorage.setItem('currentCustomer', JSON.stringify(customer));
       alert(`Login successful! Welcome, ${customer.fullName}!`);
       console.log('Login successful:', customer);
       setFormData({
         username: '',
         password: '',
       });
+      // Navigate to root and reload so App picks up the isCustomer flag and shows CustomerNavBar
       navigate('/');
       window.location.reload();
     } 
